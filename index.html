@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Random movie generator">
+	<meta name="author" content="Szymon Bialkowski">
+	<link rel="icon" href="assets/img/favicon.ico">
+
+	<title>Movie Generator</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/index.css" rel="stylesheet">
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <h1 class="mainHeading">MOVIE GENERATOR</h1>
+
+        <section class="hero d-flex align-items-center" data-type="background" data-speed="4" style="opacity: 0.3; background-position: 50% 0px;">
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 white-box">
+                    <img class="moviePoster" src="assets/img/wick.jpg" alt="John Wick II">
+                    <h4 class="title">John Wick II</h4>
+                    <hr>
+                    <p class="description">"After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life."</p>
+                    <hr>
+                    <p class="year">Year: 2017</p>
+                    <hr>
+                    <p class="rating">Rating: 7.6</p>
+                    <hr>
+                    <p class="runtime">Runtime: 148mins</p>
+                    <hr>
+                    <h4 class="genres">Genres:</h4>
+                    <ul class="list-group genresList">
+                      <li class="list-group-item">Shooter</li>
+                      <li class="list-group-item">Action</li>
+                      <li class="list-group-item">Adventure</li>
+                      <li class="list-group-item">Flying</li>
+                      <li class="list-group-item">Driving</li>
+                    </ul>
+
+
+                </div>
+
+
+                <div class="col-sm-4">
+                	<button type="button" class="btn btn-dark btn-lg generate btn-block">Generate Movie!</button>
+                </div>
+
+
+                <div class="col-sm-4 white-box">
+                    <h5 class="title">Title:</h5>
+                    <input type="text" class="form-control" id="movieTitle" placeholder="Title">
+                    <hr>
+
+
+                    <h5 class="title">Above Rating:</h5>
+                    <input type="number" class="form-control" id="movieRating" placeholder="Rating">
+                    <hr>
+
+
+                    <h5 class="title">Rating Range:</h5>
+                    <h6 class="min">Minimum:</h6>
+                    <div class="range-slider">
+                      <input class="range-slider__range" type="range" id="movieRatingRangeMin" step=".1" value="0" min="0" max="10">
+                      <span class="range-slider__value">0</span>
+                    </div>
+                    <h6 class="min">Maximum:</h6>
+                    <div class="range-slider">
+                      <input class="range-slider__range" type="range" id="movieRatingRangeMax" step=".1" value="10" min="0" max="10">
+                      <span class="range-slider__value">0</span>
+                    </div>
+                    <hr>
+
+
+                    <h5 class="title">Year:</h5>
+                    <input type="number" class="form-control" id="movieYear" placeholder="Year">
+                    <hr>
+
+
+                    <h5 class="title">Decade:</h5>
+                    <input type="number" class="form-control" id="movieDecade" placeholder="E.g 2010 = 2010-2019">
+                    <hr>
+
+                    <h6 class="blank">Please leave fields blank if you have no preference.</h6>
+					<h6 class="blank">You can only select one of the preferences above.</h6>
+                    <button type="button" class="btn btn-dark btn-lg generate btn-block">Generate Movie!</button>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+		<div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <a href="https://github.com/BialkowskiSz" target="_blank">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+			 <img src="assets/img/tmdb.png" alt="" style="max-height:4em;filter:invert(1);">
+                <a href="https://www.linkedin.com/in/szymonbialkowski/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                <br>
+                <p class="createdBy">Szymon Bialkowski</p>
+            </div>
+        </div>
+    </div>
+  </footer></footer>
+
+
+
+
+    <!--  JQuery JavaScript     -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!--  Popper JavaScript     -->
+	<script src="assets/js/popper.min.js"></script>
+    <!--  Bootstrap JavaScript  -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--  Custom JavaScript     -->
+    <script src="assets/js/index.js"></script>
+</body>

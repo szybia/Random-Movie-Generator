@@ -1,0 +1,251 @@
+@font-face {
+    font-family: Simplifica;
+    src: url('../fonts/Simplifica.ttf');
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../fonts/Lato.ttf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: white;
+    text-align: center;
+    font-family: Simplifica, Helvetica;
+}
+
+i {
+    font-size: 50px !important;
+    color: white;
+    margin: 20px 10px;
+}
+
+
+
+
+
+body {
+    background-color: #151316;
+    min-width: 200px;
+}
+
+.row {
+    text-align: center;
+    margin: 0 auto;
+}
+
+body, .hero {
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline:0;
+}
+
+h1.mainHeading {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.hero {
+    background: url("../img/alien.jpg") 50% 0 no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    min-height: 800px;
+    min-width: 100%;
+    opacity: 100;
+    position: absolute;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.white-box img {
+    width: 50%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+h2, h4.title, h4.genres {
+    color: #333;
+    font-family: Lato;
+    margin: 5px 0;
+}
+
+p.description  ,p.rating, p.year, p.runtime, p.genre, .modal-body p {
+    color: #333;
+    font-family: Lato;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.white-box input {
+    margin: 15px 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:  #888;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(21,19,22,.25);
+}
+
+hr {
+    border-top: 1px solid rgba(51,51,51, 0.2);
+}
+
+h5.title {
+    font-family: Lato;
+    margin: 10px 0;
+}
+
+button{
+    margin: 10px 0;
+}
+
+h6.min {
+    font-family: Lato;
+    font-size: 16px;
+}
+
+h6.blank {
+    font-size: 18px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+
+p.createdBy {
+    font-size: 20px;
+}
+
+
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer,
+.push {
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+    SLIDER
+*/
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (73px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-webkit-slider-thumb:hover {
+  background: #7f8c8d;
+}
+.range-slider__range:active::-webkit-slider-thumb {
+  background: #7f8c8d;
+}
+.range-slider__range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #333;
+  cursor: pointer;
+  -webkit-transition: background .15s ease-in-out;
+  transition: background .15s ease-in-out;
+}
+.range-slider__range::-moz-range-thumb:hover {
+  background: #7f8c8d;
+}
+.range-slider__range:active::-moz-range-thumb {
+  background: #7f8c8d;
+}
+
+.range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #333;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #333;
+  border-bottom: 7px solid transparent;
+  content: '';
+}
+
+::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}
