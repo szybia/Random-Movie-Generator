@@ -1,3 +1,5 @@
+var IP = "http://86.45.45.71:5000"
+
 //Parallax background effect
 $(function() {
     var $window = $(window);
@@ -61,7 +63,7 @@ $( ".generate" ).click(function() {
             }
             else
             {
-                 makeCorsRequest("http://localhost:5000/movies/title/" + movieTitle, "title");
+                 makeCorsRequest(IP + "/movies/title/" + movieTitle, "title");
             }
 
         }
@@ -80,7 +82,7 @@ $( ".generate" ).click(function() {
             }
             else
             {
-                makeCorsRequest("http://localhost:5000/movies/rating/" + movieRating, "rating");
+                makeCorsRequest(IP + "/movies/rating/" + movieRating, "rating");
             }
         }
     }
@@ -93,7 +95,7 @@ $( ".generate" ).click(function() {
         else
         {
             var data = movieRatingRangeMin + "-" + movieRatingRangeMax;
-            makeCorsRequest("http://localhost:5000/movies/rating/range/" + data, "ratingRange");
+            makeCorsRequest(IP + "/movies/rating/range/" + data, "ratingRange");
         }
 
     }
@@ -106,7 +108,7 @@ $( ".generate" ).click(function() {
         else
         {
              var data = movieRatingRangeMin + "-" + movieRatingRangeMax;
-             makeCorsRequest("http://localhost:5000/movies/rating/range/" + data, "ratingRange");
+             makeCorsRequest(IP + "/movies/rating/range/" + data, "ratingRange");
         }
     }
     else if (movieYear)
@@ -124,7 +126,7 @@ $( ".generate" ).click(function() {
             }
             else
             {
-                makeCorsRequest("http://localhost:5000/movies/year/" + movieYear, "year");
+                makeCorsRequest(IP + "/movies/year/" + movieYear, "year");
             }
         }
     }
@@ -143,13 +145,13 @@ $( ".generate" ).click(function() {
             }
             else
             {
-                makeCorsRequest("http://localhost:5000/movies/decade/" + movieDecade, "decade");
+                makeCorsRequest(IP + "/movies/decade/" + movieDecade, "decade");
             }
         }
     }
     else
     {
-        makeCorsRequest("http://localhost:5000/movies", null);
+        makeCorsRequest(IP + "/movies", null);
     }
 
 });
