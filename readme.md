@@ -1,7 +1,7 @@
 ### Random Movie Generator
 
 ## Personal Demo
-  - Coming soon.
+  - https://youtu.be/eAfC8x2jAac
 
 ##### Functionality:
 - CORS Async JS fetches movie from my MongoDB RESTful API
