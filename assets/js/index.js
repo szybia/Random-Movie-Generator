@@ -1,4 +1,4 @@
-var IP = "http://86.45.45.71:5000"
+var IP = "http://86.45.45.71:5000";
 
 //Parallax background effect
 $(function() {
